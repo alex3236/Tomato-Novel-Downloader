@@ -1,9 +1,8 @@
 [package]
-name = "official-api-adapter"
+name = "tomato-novel-official-api"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-tomato-novel-official-api = { path = "../../Tomato-Novel-Official-API" }
 anyhow = "1"
 serde = { version = "1", features = ["derive"] }
