@@ -72,6 +72,9 @@ arboard = { version = "3.4", optional = true }
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1"
 
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+
 [profile.release]
 opt-level = "z"
 lto = "fat"
