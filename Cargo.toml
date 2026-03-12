@@ -8,7 +8,7 @@ edition = "2024"
 default = ["official-api", "tts", "clipboard", "clipboard-arboard"]
 
 # 依赖 Tomato-Novel-Official-API 的实现。
-official-api = ["dep:tomato-novel-official-api"]
+official-api = ["dep:official-api-adapter"]
 
 # 不依赖 Official-API 的构建：目录/书信息走 web 解析；正文强制第三方模式。
 no-official-api = []
